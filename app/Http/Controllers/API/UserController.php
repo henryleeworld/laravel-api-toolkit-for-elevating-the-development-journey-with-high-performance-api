@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\User\CreateUserRequest;
@@ -10,16 +10,10 @@ use App\Models\User;
 use Essa\APIToolKit\Api\ApiResponse;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     use ApiResponse;
-
-    public function __construct()
-    {
-
-    }
 
     public function index(): AnonymousResourceCollection 
     {

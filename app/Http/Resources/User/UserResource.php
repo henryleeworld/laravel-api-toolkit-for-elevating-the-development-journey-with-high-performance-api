@@ -10,7 +10,6 @@ class UserResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            
             'created_at' => dateTimeFormat($this->created_at),
             'updated_at' => dateTimeFormat($this->updated_at),
         ];
